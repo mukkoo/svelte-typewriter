@@ -3,7 +3,9 @@
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-[DEMO](https://svelte.dev/repl/9dfb73bfa9b34aeea4740fa23f5cde8a?version=3.14.1)
+[DEMO](https://svelte.dev/repl/9dfb73bfa9b34aeea4740fa23f5cde8a)
+
+> **WARNING:** This is a legacy version of svelte-typewriter, and won't receive updates anymore, if you want to use the latest supported version, go to the [master](https://github.com/henriquehbr/svelte-typewriter) branch
 
 ## Installation
 
@@ -64,7 +66,7 @@ The interval in milliseconds between each letter
 
 default: `30`
 
-[DEMO](https://svelte.dev/repl/eb6caec159cf454b8f2bc98f3444fa8c?version=3.14.1)
+[DEMO](https://svelte.dev/repl/eb6caec159cf454b8f2bc98f3444fa8c)
 
 #### Example:
 
@@ -88,7 +90,7 @@ Enables the cascading mode, where each element is animated sequentially instead 
 
 default: `false`
 
-[DEMO](https://svelte.dev/repl/9ddb89942e954a2a90b553356952ff46?version=3.14.1)
+[DEMO](https://svelte.dev/repl/9ddb89942e954a2a90b553356952ff46)
 
 #### Example:
 
@@ -102,11 +104,9 @@ default: `false`
 
 ### `loop`
 
-Cycles the typewriter animation between the children elements of the `<Typewriter>` component
+Cycles the typewriter animation between the children elements of the `<Typewriter>` component, the tag name will be determined by the first child of the `<Typewriter>` component
 
 > **Warning:** won't work if `cascade` is enabled
-
-> When using the `loop` prop, the tag name will be determined by the first child of the `<Typewriter>` component
 
 default: `false`
 
