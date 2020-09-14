@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [Unreleased](https://github.com/henriquehbr/svelte-typewriter/compare/v2.1.16...HEAD)
+
+- chore(deps): bump node-fetch from 2.6.0 to 2.6.1 [`#19`](https://github.com/henriquehbr/svelte-typewriter/pull/19)
+- build: add rollup for bundle size benchmark #18 [`2f7857b`](https://github.com/henriquehbr/svelte-typewriter/commit/2f7857b4b2bbf7640d2002f622f00e1745327575)
+
 #### [v2.1.16](https://github.com/henriquehbr/svelte-typewriter/compare/v2.1.15...v2.1.16)
 
 > 6 September 2020
