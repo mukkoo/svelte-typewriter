@@ -30,12 +30,15 @@ const libConfig = format => ({
 	output: {
 		format,
 		...(format === 'es'
-			? { dir: 'lib/esm', entryFileNames: 'index.mjs' }
+			? {
+					dir: 'lib/esm',
+					inlineDynamicImports: format === 'es' ? false : true,
+					entryFileNames: 'index.mjs'
+			  }
 			: { dir: 'lib/umd', name: 'Typewriter', entryFileNames: 'index.js' })
 	},
 	plugins,
-	...(format === 'es' && { external: ['svelte/internal'] }),
-	inlineDynamicImports: format === 'es' ? false : true
+	...(format === 'es' && { external: ['svelte/internal'] })
 })
 
 export default [libConfig('es'), libConfig('umd')]

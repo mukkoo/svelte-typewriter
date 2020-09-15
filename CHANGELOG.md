@@ -5,7 +5,8 @@ All notable changes to this project will be documented in this file. Dates are d
 #### [Unreleased](https://github.com/henriquehbr/svelte-typewriter/compare/v2.1.16...HEAD)
 
 - chore(deps): bump node-fetch from 2.6.0 to 2.6.1 [`#19`](https://github.com/henriquehbr/svelte-typewriter/pull/19)
-- build: add rollup for bundle size benchmark #18 [`2f7857b`](https://github.com/henriquehbr/svelte-typewriter/commit/2f7857b4b2bbf7640d2002f622f00e1745327575)
+- build: add rollup for bundle size benchmark #18 [`82a91c0`](https://github.com/henriquehbr/svelte-typewriter/commit/82a91c0ed7888e6a659552f9ef6209bfc0e04ae3)
+- refactor(rollup): move inlineDynamicImports to output.inlineDynamicImports [`ce29957`](https://github.com/henriquehbr/svelte-typewriter/commit/ce2995790ba663fa3c3db2a17579a4109c61c568)
 
 #### [v2.1.16](https://github.com/henriquehbr/svelte-typewriter/compare/v2.1.15...v2.1.16)
 
