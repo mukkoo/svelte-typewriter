@@ -58,6 +58,16 @@
 
 <hr />
 
+<pre>
+  &lt;Typewriter loopRandom interval=&lcub;80&rcub; delay=&lcub;3000&rcub; cursor='limegreen' unwriteInterval=&lcub;20&rcub; /&gt;
+</pre>
+
+<TypewriterControls loopRandom interval={80} delay={3000} cursor='limegreen' unwriteInterval={20}>
+  <slot />
+</TypewriterControls>
+
+<hr>
+
 <pre
 >
   &lt;Typewriter loopRandom interval=&lcub;80&rcub; delay=&lcub;3000&rcub; cursor='limegreen' on:done=&lcub;() =&gt; console.log('Hello World!')&rcub; /&gt;

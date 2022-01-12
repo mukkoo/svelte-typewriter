@@ -9,8 +9,9 @@
   export let scrambleSlowdown = true
   export let cursor = true
   export let delay = 0
+   export let unwriteInterval = false
 
-  $: props = { interval, cascade, loop, loopRandom, scramble, scrambleSlowdown, cursor, delay }
+  $: props = { interval, cascade, loop, loopRandom, scramble, scrambleSlowdown, cursor, delay, unwriteInterval }
 </script>
 
 {#if scramble}
@@ -27,6 +28,10 @@
 
     <b>Delay:</b>
     <input type="number" bind:value={delay} />
+{/if}
+{#if loop || loopRandom}
+  <b>Unwrite Interval:</b>
+  <input type="number" bind:value={unwriteInterval} />
 {/if}
 
 <Typewriter {...props}>
