@@ -10,10 +10,11 @@
     export let scrambleSlowdown = scramble ? true : false
 	export let cursor = true
 	export let delay = 0
+	export let unwriteInterval = false
 
 	const dispatch = createEventDispatcher()
   
-    $: options = { interval, cascade, loop, loopRandom, scramble, scrambleSlowdown, cursor, delay, dispatch }
+    $: options = { interval, cascade, loop, loopRandom, scramble, scrambleSlowdown, cursor, delay, dispatch, unwriteInterval }
 </script>
 
 <style>

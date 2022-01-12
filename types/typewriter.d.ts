@@ -5,6 +5,7 @@ interface TypewriterElement {
 
 interface TypewriterOptions {
 	interval: number | number[]
+	unwriteInterval: boolean | number
 	cascade: boolean
 	loop: boolean | number
 	loopRandom: boolean | number
